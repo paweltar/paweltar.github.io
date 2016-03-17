@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Paweł Targoński
+title: Paul Targoński
 email: paweltar@gmail.com
-description: > # this is my personal website
+description: > # hi, this is my personal website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  paweltar
