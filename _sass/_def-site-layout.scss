@@ -1,0 +1,20 @@
+.def-site-header {
+  border-bottom: 1px solid lightgray;
+}
+.about-section {
+  background-color: lightgray;
+  margin: 0 30px;
+  padding: 20px;
+}
+.gallery-wrapper {
+  display: flex;
+  flex-wrap:         wrap;
+  justify-content:         space-between;
+  margin: 30px;
+  .gallery-card {
+    height: 380px;
+    width: 250px;
+    border: 1px solid black;
+    img {}
+  }
+}
