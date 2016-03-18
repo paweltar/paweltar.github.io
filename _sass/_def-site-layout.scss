@@ -1,8 +1,15 @@
+$default-card: 300px;
+$big-card: $default-card * 2 + 20;
 .def-site-header {
   border-bottom: 1px solid lightgray;
 }
 .about-section {
-  background-color: lightgray;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/notebook-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   margin: 0 30px 30px;
   height: 250px;
   display: flex;
@@ -15,8 +22,12 @@
       width: 100%;
     };
   }
+  @include media-query($on-palm) {
+    background: lightgray;
+  };
   .about-text {
     margin-left: 10px;
+    color: white;
   }
   @include media-query($on-palm) {
     height: auto;
@@ -25,21 +36,34 @@
 }
 .gallery-wrapper {
   margin: 0 auto;
+  padding: 0 15px;
   .gallery-card {
     height: auto;
-    width: 250px;
+    width: $default-card;
     margin-bottom: 10px;
     background-color: white;
     border-radius: 3px;
+    box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.75);
     img {
       border-radius: 3px 3px 0 0;
       object-fit: cover;
+      &:hover {
+        filter:none;
+      }
     }
     .card-desc-section {
       height: 50px;
-      p {
-
-      }
+      display: flex;
+      p {}
     }
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+    }
+  }
+  .gallery-card--width2 {
+    width: $big-card;
+  }
+  .image {
+    border-radius: 3px !important;
   }
 }
