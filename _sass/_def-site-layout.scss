@@ -1,15 +1,17 @@
 $default-card: 300px;
 $big-card: $default-card * 2 + 20;
+
 .def-site-header {
   border-bottom: 1px solid lightgray;
 }
 .about-section {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/notebook-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/notebook-bg.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
+  background-color: #2C3E50;
   margin: 0 30px 30px;
   height: 250px;
   display: flex;
