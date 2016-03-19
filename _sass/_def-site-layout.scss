@@ -2,7 +2,14 @@ $default-card: 300px;
 $big-card: $default-card * 2 + 20;
 
 .def-site-header {
-  border-bottom: 1px solid lightgray;
+  height: 50px;
+  border-bottom: 1px solid #e8e8e8;
+  .def-site-title {
+
+  }
+  .def-site-nav {
+    float: right;
+  }
 }
 .about-section {
   // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/notebook-bg.jpg) no-repeat center center fixed;
@@ -11,7 +18,7 @@ $big-card: $default-card * 2 + 20;
   // -o-background-size: cover;
   // background-size: cover;
 
-  background-color: #2C3E50;
+  background-color: #A4A1A6;
   margin: 0 30px 30px;
   height: 250px;
   display: flex;
