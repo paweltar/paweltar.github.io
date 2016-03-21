@@ -4,20 +4,18 @@ $big-card: $default-card * 2 + 20;
 .def-site-header {
   height: 50px;
   border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   .def-site-title {
 
   }
   .def-site-nav {
-    float: right;
+
   }
 }
 .about-section {
-  // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/notebook-bg.jpg) no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
   background-color: #A4A1A6;
   margin: 0 30px 30px;
   height: 250px;

@@ -1,6 +1,12 @@
 /**
  * Site header
  */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .site-header {
   box-sizing: border-box;
   border: 30px solid #F3F3EB;
@@ -112,7 +118,6 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  flex: 1;
 }
 .footer-heading {
   font-size: 18px;
@@ -169,6 +174,7 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  flex: 1;
 }
 .page-heading {
   font-size: 20px;
