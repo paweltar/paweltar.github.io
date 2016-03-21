@@ -14,13 +14,13 @@ $big-card: $default-card * 2 + 20;
   .title-wraper {
     width: 50px;
     height: 100%;
-    background-color: darken($background-color, 25%);
+    background-color: $accent-color;
     display: flex;
     justify-content: center;
     align-items: center;
     .def-site-title {
       text-transform: uppercase;
-      color: $text-color;
+      color: $background-color;
     }
   }
   .def-site-nav {
@@ -54,26 +54,48 @@ $big-card: $default-card * 2 + 20;
 .bottom-navigation {
   display: none;
   height: 56px;
-  background-color: transparentize(darken($background-color, 10%), .2);
+  background-color: transparentize(white, .15);
   box-shadow: 0px -3px 9px -1px rgba(0,0,0,0.25);
+  border-top: 4px solid $accent-color;
 
   .bottom-nav-links {
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: black;
+    .bottom-home-wrapper {
+      height: 100%;
+      width: 56px;
+      background-color: #D8303D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 22px;
+      }
+    }
     .bottom-page-link {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      &:last-child {
+        margin-right: 20px;
+      }
       .nav-icon {
-        color: $text-color;
+        color: lighten(black, 20%);
         font-size: 24px;
-        transition: color .3s ease-in-out;
+        transition: all .3s ease-in-out;
         i {
           padding: 6px 0;
+          text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
         }
         &:hover {
           color: lighten($text-color, 25%);
@@ -83,6 +105,7 @@ $big-card: $default-card * 2 + 20;
         font-family: 'Quicksand', sans-serif;
         font-size: 12px;
         padding-bottom: 10px;
+        font-weight: 600;
       }
     }
   }

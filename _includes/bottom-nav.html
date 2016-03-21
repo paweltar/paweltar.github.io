@@ -1,11 +1,15 @@
 <nav class="bottom-navigation">
   <div class="bottom-nav-links">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-      <div class="bottom-page-link">
-        <a class="nav-icon" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-user"></i></a>
-        <p class="nav-label">{{ my_page.title }}</p>
-      </div>
+
+    <div class="bottom-home-wrapper">
+      <a class="bottom-home-link" href="{{ site.baseurl }}/">pt</a>
+    </div>
+
+    {% for my_page in site.pages %} {% if my_page.title %}
+    <div class="bottom-page-link">
+      <a class="nav-icon" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-user"></i></a>
+      <p class="nav-label">{{ my_page.title }}</p>
+    </div>
     {% endif %} {% endfor %}
 
     <div class="bottom-page-link">
