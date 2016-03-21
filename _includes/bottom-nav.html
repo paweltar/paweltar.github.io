@@ -1,0 +1,36 @@
+<nav class="bottom-navigation">
+  <div class="bottom-nav-links">
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <div class="bottom-page-link">
+        <a class="nav-icon" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-user"></i></a>
+        <p class="nav-label">{{ my_page.title }}</p>
+      </div>
+    {% endif %} {% endfor %}
+
+    <div class="bottom-page-link">
+      <a href="/blog.html" class="nav-icon"><i class="fa fa-comment-o"></i>
+</a>
+      <p class="nav-label">Blog</p>
+    </div>
+
+    <div class="bottom-page-link">
+      <a href="/{{ site.baseurl }}#gallery-section" class="nav-icon"><i class="fa fa-pencil"></i>
+</a>
+      <p class="nav-label">Gallery</p>
+    </div>
+
+    <div class="bottom-page-link">
+      <a href="https://github.com/paweltar" class="nav-icon" target="_blank"><i class="fa fa-github-alt"></i>
+</a>
+      <p class="nav-label">Github</p>
+    </div>
+
+    <div class="bottom-page-link">
+      <a href="#" class="nav-icon"><i class="fa fa-paper-plane-o"></i>
+</a>
+      <p class="nav-label">Contact</p>
+    </div>
+
+  </div>
+</nav>
