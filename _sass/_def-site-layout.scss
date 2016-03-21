@@ -1,6 +1,5 @@
 $default-card: 300px;
 $big-card: $default-card * 2 + 20;
-
 .def-site-header {
   height: 50px;
   border-bottom: 1px solid #e8e8e8;
@@ -8,11 +7,36 @@ $big-card: $default-card * 2 + 20;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  .def-site-title {
-
+  font-family: 'Quicksand', sans-serif;
+  color: $text-color;
+  line-height: $base-line-height;
+  font-weight: 600;
+  .title-wraper {
+    width: 50px;
+    height: 100%;
+    background-color: darken($background-color, 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .def-site-title {
+      text-transform: uppercase;
+      color: $text-color;
+    }
   }
   .def-site-nav {
-
+    width: 350px;
+    .def-nav-links {
+      margin-right: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        color: $text-color;
+        &:hover {
+          color: lighten($text-color, 25%);
+        }
+      }
+    }
   }
 }
 .about-section {

@@ -1,23 +1,23 @@
 <header class="def-site-header">
 
 
-      <a class="def-site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <!-- <a class="def-site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+  <div class="title-wraper">
+    <a class="def-site-title" href="{{ site.baseurl }}/">pt</a>
+  </div>
 
-        <nav class="def-site-nav">
+  <nav class="def-site-nav">
 
-          <div class="def-nav-links">
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-                <a class="def-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-              {% endif %}
-            {% endfor %}
-            <a href="/blog.html" class="page-link"><span>Blog</span></a>
-            <a class="def-page-link" href="/{{ site.baseurl }}#gallery-section">Gallery</a>
-            <a class="def-page-link" href="https://github.com/paweltar">Github</a>
-            <a class="def-page-link" href="">Contact</a>
-          </div>
+    <div class="def-nav-links">
+      {% for my_page in site.pages %} {% if my_page.title %}
+      <a class="def-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> {% endif %} {% endfor %}
+      <a href="/blog.html" class="page-link"><span>Blog</span></a>
+      <a class="def-page-link" href="/{{ site.baseurl }}#gallery-section">Gallery</a>
+      <a class="def-page-link" href="https://github.com/paweltar">Github</a>
+      <a class="def-page-link" href="">Contact</a>
+    </div>
 
-        </nav>
+  </nav>
 
 
 
