@@ -9,10 +9,10 @@
 
 .site-header {
   box-sizing: border-box;
-  border: 30px solid #F3F3EB;
+  border: 30px solid $background-color;
   min-height: 56px;
   height: 100vh;
-  background: #D8303D;
+  background: $accent-color;
   padding: 20px;
   position: relative;
 }
@@ -189,6 +189,10 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  @include media-query($on-laptop) {
+    text-align: center;
+  }
+
 }
 .post-link {
   display: block;
@@ -199,17 +203,25 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  font-family: $complementary-font;
 }
 .post-title {
-  font-size: 42px;
+  font-size: 3rem;
   letter-spacing: -1px;
   line-height: 1;
   @include media-query($on-laptop) {
-    font-size: 36px;
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
 .post-content {
   margin-bottom: $spacing-unit;
+  p {
+    font-size: $post-content-size;
+    @include media-query($on-laptop) {
+      font-size: $post-content-size * 0.875;
+    }
+  }
   h2 {
     font-size: 32px;
     @include media-query($on-laptop) {

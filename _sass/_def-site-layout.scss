@@ -54,8 +54,9 @@ $big-card: $default-card * 2 + 20;
 .bottom-navigation {
   display: none;
   height: 56px;
-  background-color: transparentize(white, .15);
-  box-shadow: 0px -3px 9px -1px rgba(0,0,0,0.25);
+  background-color: $background-color;
+  // box-shadow: 0px -3px 9px -1px rgba(0,0,0,0.25);
+  border-top: 1px solid #e8e8e8;
 
   .bottom-nav-links {
     height: 100%;
@@ -82,6 +83,7 @@ $big-card: $default-card * 2 + 20;
     }
     .bottom-page-link {
       height: 100%;
+      width: 56px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,22 +91,28 @@ $big-card: $default-card * 2 + 20;
         margin-right: 20px;
       }
       .nav-icon {
-        color: lighten(black, 20%);
-        font-size: 24px;
+        color: lighten($text-color, 40%);
+        font-size: 1.4rem;
         transition: all .3s ease-in-out;
+        margin-top: 2px;
         i {
-          padding: 6px 0;
+          padding: 7px 0;
           // text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
         }
+        &:active {
+
+        }
         &:hover {
-          color: lighten($text-color, 25%);
+          color: lighten(black, 20%);
         }
       }
       .nav-label {
         font-family: $complementary-font;
         font-size: 12px;
-        padding-bottom: 10px;
-        font-weight: 600;
+        padding-bottom: 0px;
+        margin-top: -7px;
+        font-weight: 500;
+        color: lighten($text-color, 40%);
       }
     }
   }

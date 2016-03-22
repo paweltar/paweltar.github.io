@@ -17,5 +17,9 @@ github_username:  paweltar
 # Build settings
 markdown: kramdown
 
+typeset:
+  only: '.post-content'
+  ignore: '.ignore'
+
 gems:
   - octopress-autoprefixer
