@@ -17,7 +17,7 @@
   position: relative;
 }
 .site-title {
-  font-family: 'EB Garamond', serif;
+  font-family: $base-font-family;
   color: white;
   font-size: 60px;
   font-weight: 500;
@@ -79,7 +79,7 @@
     display: none;
   }
   .page-link {
-    font-family: 'Quicksand', sans-serif;
+    font-family: $complementary-font;
     color: $text-color;
     line-height: $base-line-height;
     font-weight: 600;
