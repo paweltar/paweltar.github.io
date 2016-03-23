@@ -6,7 +6,6 @@
   min-height: 100vh;
   flex-direction: column;
 }
-
 .site-header {
   box-sizing: border-box;
   border: 30px solid $background-color;
@@ -50,7 +49,6 @@
     align-content: flex-end;
     text-align: left;
   }
-
 }
 #title-section {
   margin: 5%;
@@ -68,9 +66,7 @@
     };
   }
   .site-nav {
-    @include media-query($on-palm) {
-
-    };
+    @include media-query($on-palm) {};
   }
 }
 .site-nav {
@@ -96,7 +92,6 @@
   }
   @include media-query($on-palm) {
     text-align: left;
-
     .page-link {
       display: block;
       padding: 5px 0;
@@ -192,7 +187,6 @@
   @include media-query($on-laptop) {
     text-align: center;
   }
-
 }
 .post-link {
   display: block;
