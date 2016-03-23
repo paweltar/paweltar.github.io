@@ -215,6 +215,10 @@
     @include media-query($on-laptop) {
       font-size: $post-content-size * 0.875;
     }
+    span.dropcap {
+      color: $accent-color;
+      margin-right: 5px;
+    }
   }
   h2 {
     font-size: 32px;
