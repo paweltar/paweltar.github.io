@@ -204,20 +204,23 @@
       color: $grey-color;
       white-space: nowrap;
       margin-left: 10px;
-      @include media-query($on-laptop) {
+      @include media-query($on-palm) {
         text-align: center;
       }
     }
   }
 }
-
-
 /**
  * Posts
  */
 .post-header {
   margin-bottom: $spacing-unit;
   font-family: $complementary-font;
+  .post-meta {
+    @include media-query($on-palm) {
+      text-align: center;
+    }
+  }
 }
 .post-title {
   font-size: 3rem;
