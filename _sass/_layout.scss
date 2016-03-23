@@ -111,7 +111,7 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 $spacing-unit/6 0;
   margin-bottom: 56px;
 }
 .footer-heading {
@@ -172,10 +172,12 @@
   flex: 1;
 }
 .page-heading {
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 .post-list {
   margin-left: 0;
+  padding-left: 15px;
+  border-left: 2px solid darken($accent-color, 15%);
   list-style: none;
   > li {
     margin-bottom: $spacing-unit;
@@ -216,7 +218,7 @@
       font-size: $post-content-size * 0.875;
     }
     span.dropcap {
-      color: $accent-color;
+      color: $typography-accent;
       margin-right: 5px;
     }
   }
