@@ -179,21 +179,39 @@
   padding-left: 15px;
   border-left: 2px solid darken($accent-color, 15%);
   list-style: none;
-  > li {
+  li {
     margin-bottom: $spacing-unit;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 0;
+      .post-link {
+        display: block;
+        font-size: 24px;
+        white-space: nowrap;
+        margin-right: 10px;
+      }
+    }
+    .leader-dots {
+      width: 100%;
+      border-bottom: 2px dotted darken($typography-accent, 20%);
+    }
+    .post-meta {
+      font-size: $small-font-size;
+      color: $grey-color;
+      white-space: nowrap;
+      margin-left: 10px;
+      @include media-query($on-laptop) {
+        text-align: center;
+      }
+    }
   }
 }
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-  @include media-query($on-laptop) {
-    text-align: center;
-  }
-}
-.post-link {
-  display: block;
-  font-size: 24px;
-}
+
+
 /**
  * Posts
  */
