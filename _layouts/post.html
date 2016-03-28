@@ -8,6 +8,8 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
+  <hr></hr>
+  
   <div class="post-content" itemprop="articleBody">
     {% assign drop_cap = content|strip_html|truncate:4|remove:'.' %}
     {% capture drop_cap_html %}<span class="dropcap">{{ drop_cap }}</span>{% endcapture %}

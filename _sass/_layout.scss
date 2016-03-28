@@ -222,6 +222,13 @@
     }
   }
 }
+hr {
+  width: 60px;
+  margin: 12px auto 27px;
+  height: 2px;
+  border: 0px none;
+  background: $typography-accent none repeat scroll 0%
+}
 .post-title {
   font-size: 3rem;
   letter-spacing: -1px;
