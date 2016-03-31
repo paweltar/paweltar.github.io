@@ -1,5 +1,5 @@
-$default-card: 300px;
-$big-card: $default-card * 2 + 20;
+$default-card: 25%;
+
 .def-site-header {
   height: 50px;
   border-bottom: 1px solid #e8e8e8;
@@ -151,18 +151,20 @@ $big-card: $default-card * 2 + 20;
   }
 }
 .gallery-wrapper {
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 auto 30px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   .gallery-card {
     height: auto;
     width: $default-card;
-    margin-bottom: 10px;
     background-color: white;
-    border-radius: 3px;
     box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.75);
     img {
-      border-radius: 3px 3px 0 0;
       object-fit: cover;
+      height: 400px;
       &:hover {
         filter:none;
       }
@@ -175,11 +177,14 @@ $big-card: $default-card * 2 + 20;
     &:hover {
       box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
     }
-  }
-  .gallery-card--width2 {
-    width: $big-card;
+    @include media-query($on-laptop) {
+      width: 2 * $default-card;
+    }
+    @include media-query($on-palm) {
+      width: 100%;
+    }
   }
   .image {
-    border-radius: 3px !important;
+
   }
 }

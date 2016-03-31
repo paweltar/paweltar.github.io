@@ -1,0 +1,101 @@
+.row {
+  display: flex;
+  .sketch-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 40px 0;
+    .sketch {
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    }
+    @include media-query($on-palm) {
+      width: 100%;
+    };
+  }
+  .sketch-description-wrapper {
+    @extend .sketch-wrapper;
+    @include media-query($on-palm) {
+      display: none;
+    };
+  }
+}
+
+// "winter night" 31.03.2016
+
+#winter-night {
+
+}
+
+// snow
+
+$height: 600px;
+$width: 350px;
+
+$sky-dark: #191B32;
+$sky-light: #708D93;
+$snowflake: #94BFD6;
+
+@mixin let-it-snow($amount) {
+  $shadow-values: #{random($width)}px #{random($height)}px #{random(3)}px 0px $snowflake;
+
+		@for $i from 0 through $amount - 2 {
+			$shadow-values: $shadow-values + "," #{random($width - 2)}px #{random($height - 2)}px #{random(5)}px 0px $snowflake;
+		}
+
+	box-shadow: $shadow-values;
+}
+
+@keyframes snow1 {
+  0% {top: -50px;
+      left: -30px;
+      opacity: .1}
+
+  20%, 80% {opacity: 1}
+
+  100% {top: 15px;
+        left: 10px;
+        opacity: .1}
+}
+
+@keyframes snow2 {
+  0% {top: -70px;
+      right: -30px;
+      opacity: .1}
+
+  20%, 80% {opacity: 1}
+
+  100% {top: 30px;
+        right: 0;
+        opacity: .1}
+}
+
+.night-sky {
+  height: $height;
+  width: $width;
+  background: linear-gradient($sky-dark, $sky-light);
+  position: relative;
+  overflow: hidden;
+  .snowflake {
+    width: 3px;
+    height: 5px;
+    position: absolute;
+    background: $snowflake;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+
+    @include let-it-snow(150);
+    animation: snow1 5s linear infinite;
+
+    &:before {
+      content: '';
+      @extend .snowflake;
+
+      @include let-it-snow(50);
+      animation: snow2 7s linear infinite;
+    }
+  }
+}
