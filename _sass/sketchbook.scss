@@ -13,6 +13,7 @@
     }
     @include media-query($on-palm) {
       width: 100%;
+      padding: 20px 0;
     };
   }
   .sketch-description-wrapper {
@@ -100,7 +101,10 @@ $snowflake: #94BFD6;
   }
 }
 
-// botte of wine 1.04.2016
+// bottle of wine 1.04.2016
+#wine-bottle {
+
+}
 
 $bg-color: #3F4C5D;
 $bottle-color: #000;
@@ -110,7 +114,7 @@ $reflection-color: #262626;
 .bg {
   width: 350px;
   height: 550px;
-  background: $bg-color;
+  background: linear-gradient(to bottom, #4B1414, #000206);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,12 +126,16 @@ $reflection-color: #262626;
     background: $bottle-color;
     position: relative;
     border-radius: 0 0 7px 7px;
-    border-left: inset 1px $wine-color;
+    border-left: inset 1px rgba(white, .9);
     top: 60px;
     background: radial-gradient(ellipse closest-side at 50px 265px,
       $wine-color,
       $bottle-color
     );
+    box-shadow: inset 5px -4px 7px -7px white,
+                inset -9px 0px 12px -13px white,
+                inset 1px 22px 8px 10px black,
+                inset 45px 0 25px -5px rgba(white, .15);
     &:before {
       display: block;
       content: '';
@@ -137,12 +145,16 @@ $reflection-color: #262626;
       background: $bottle-color;
       border-radius: 49%;
       top: -50px;
-      border-top: inset 5px lighten($reflection-color, 50%);
+      left: -1px;
+      border-top: inset 3px white;
+      border-left: inset 1px rgba(white, .95);
       z-index: -1;
       background: radial-gradient(ellipse closest-side at 50px 22px,
       $wine-color,
       $bottle-color 89%
     );
+      box-shadow: inset 0 4px 10px -5px white,
+                  inset 15px 4px 3px -5px rgba(white, .2);
     }
     &:after {
       display: block;
@@ -152,8 +164,8 @@ $reflection-color: #262626;
       height: 110px;
       background: $bottle-color;
       border-radius: 5px 5px 0 0;
-      border-left: inset 2px lighten($reflection-color, 50%);
-      top: -152px;
+      border-left: inset 2px rgba(white, .8);
+      top: -156px;
       left: 29px;
       background: linear-gradient(to bottom,
         $bottle-color,
@@ -164,6 +176,8 @@ $reflection-color: #262626;
         $reflection-color 17%,
         $bottle-color
       );
+      // z-index: -2;
+      box-shadow: inset 15px 0 5px -5px rgba(white, .2);
     }
   }
 }
