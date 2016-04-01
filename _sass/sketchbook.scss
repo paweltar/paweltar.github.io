@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 40px 0;
+    padding: 40px 20px;
     .sketch {
       border-radius: 5px;
       overflow: hidden;
@@ -96,6 +96,74 @@ $snowflake: #94BFD6;
 
       @include let-it-snow(50);
       animation: snow2 7s linear infinite;
+    }
+  }
+}
+
+// botte of wine 1.04.2016
+
+$bg-color: #3F4C5D;
+$bottle-color: #000;
+$wine-color: #903749;
+$reflection-color: #262626;
+
+.bg {
+  width: 350px;
+  height: 550px;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  .bottle {
+    width: 100px;
+    height: 270px;
+    background: $bottle-color;
+    position: relative;
+    border-radius: 0 0 7px 7px;
+    border-left: inset 1px $wine-color;
+    top: 60px;
+    background: radial-gradient(ellipse closest-side at 50px 265px,
+      $wine-color,
+      $bottle-color
+    );
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: $bottle-color;
+      border-radius: 49%;
+      top: -50px;
+      border-top: inset 5px lighten($reflection-color, 50%);
+      z-index: -1;
+      background: radial-gradient(ellipse closest-side at 50px 22px,
+      $wine-color,
+      $bottle-color 89%
+    );
+    }
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 110px;
+      background: $bottle-color;
+      border-radius: 5px 5px 0 0;
+      border-left: inset 2px lighten($reflection-color, 50%);
+      top: -152px;
+      left: 29px;
+      background: linear-gradient(to bottom,
+        $bottle-color,
+        lighten($reflection-color, 20%) 5%,
+        $reflection-color 6%,
+        $reflection-color 11%,
+        $bottle-color 15%,
+        $reflection-color 17%,
+        $bottle-color
+      );
     }
   }
 }
