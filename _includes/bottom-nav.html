@@ -5,12 +5,10 @@
       <a class="bottom-home-link" href="{{ site.baseurl }}/">pt</a>
     </div>
 
-    {% for my_page in site.pages %} {% if my_page.title %}
     <div class="bottom-page-link">
-      <a class="nav-icon" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-user"></i></a>
-      <p class="nav-label">{{ my_page.title }}</p>
+      <a class="nav-icon" href="/about"><i class="fa fa-user"></i></a>
+      <p class="nav-label">About</p>
     </div>
-    {% endif %} {% endfor %}
 
     <div class="bottom-page-link">
       <a href="/blog.html" class="nav-icon"><i class="fa fa-comment-o"></i>
@@ -31,7 +29,7 @@
     </div>
 
     <div class="bottom-page-link">
-      <a href="#" class="nav-icon"><i class="fa fa-paper-plane-o"></i>
+      <a href="/contact" class="nav-icon"><i class="fa fa-paper-plane-o"></i>
 </a>
       <p class="nav-label">Contact</p>
     </div>
