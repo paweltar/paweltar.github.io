@@ -343,9 +343,7 @@ $text-color: darken(white, 35%);
   $diagonal-white: rgba(white, .3);
 
   @keyframes animate {
-    0% {
-      transform: rotateX(0deg) rotateY(0deg);
-    }
+    0% {}
     100% {
       transform: rotateY(360deg) rotateX(360deg);
     }
