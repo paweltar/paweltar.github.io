@@ -414,7 +414,7 @@ $text-color: darken(white, 35%);
 
   @keyframes rotate {
     50% {
-      transform: rotateY(360deg) rotateX(15deg) scale(.7);
+      transform: rotateY(360deg) rotateX(15deg);
     }
   }
 
@@ -422,12 +422,17 @@ $text-color: darken(white, 35%);
     50% {
       width: 15px;
       height: 15px;
-      box-shadow: 0 0 150px 40px white,
+      box-shadow: 0 0 100px 40px rgba(white, .8),
                   0 0 5px 0 white;
       background: rgba(white, .8);
     }
   }
-
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .crystal-bg {
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -443,9 +448,8 @@ $text-color: darken(white, 35%);
     display: flex;
     justify-content: center;
     align-items: center;
-    //overflow-hidden collides with 3d perspective
-    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
     border-radius: 5px;
+    box-shadow: 0 1px 3px 1px rgba(black, .6);
     .crystal {
       height: #{$width}px;
       width: #{$width}px;
@@ -472,18 +476,14 @@ $text-color: darken(white, 35%);
         left: 50%;
         box-shadow: 0 0 60px 20px white;
         animation: shine 2s infinite ease-in-out;
-        &:before {
-          content: '';
-          display: block;
+      }
+      .heart-2 {
           @extend .heart;
           transform: rotateX( 90deg );
         }
-        &:after {
-          content: '';
-          display: block;
-          @extend .heart;
-          transform: rotateY( 90deg ) translateY(-10px);
-        }
+      .heart-3 {
+        @extend .heart;
+          transform: rotateY( 90deg );
       }
       .up-1 {
         transform: translateZ( 33px ) rotateX( 30deg );
