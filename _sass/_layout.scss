@@ -11,18 +11,23 @@
   border: 30px solid $background-color;
   min-height: 56px;
   height: 100vh;
-  background: $accent-color;
+  background-image: radial-gradient(circle at 0% 0%, $light-sky, $blue-sky, $dark-sky);
   padding: 20px;
   position: relative;
 }
 .site-title {
   font-family: $base-font-family;
   color: white;
+  border-bottom: 2px solid $accent-color;
+  padding: 15px;
   font-size: 60px;
   font-weight: 500;
   line-height: 56px;
   letter-spacing: -3px;
   margin-bottom: 0;
+  @include media-query($on-palm) {
+    border-bottom: none;
+  }
   &,
   &:visited {
     color: white;
@@ -76,17 +81,17 @@
   }
   .page-link {
     font-family: $complementary-font;
-    color: $text-color;
+    color: rgba(white, .7);
     line-height: $base-line-height;
     font-weight: 600;
     &:not(:last-child) {
       margin-right: 20px;
     }
     &:hover {
-      color: ($text-color);
-      background-color: transparentize(yellow, 0.5);
+      color: white;
+      background-color: transparentize($accent-color, 0.5);
       padding: 5px 0;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $accent-color;
       transition: 0.3s ease-in-out;
     }
   }
@@ -217,9 +222,7 @@
   margin-bottom: $spacing-unit;
   font-family: $complementary-font;
   .post-meta {
-    @include media-query($on-palm) {
       text-align: center;
-    }
   }
 }
 hr {
@@ -233,9 +236,9 @@ hr {
   font-size: 3rem;
   letter-spacing: -1px;
   line-height: 1;
+  text-align: center;
   @include media-query($on-laptop) {
     font-size: 2.5rem;
-    text-align: center;
   }
 }
 .post-content {

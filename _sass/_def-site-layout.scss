@@ -14,13 +14,14 @@ $default-card: 25%;
   .title-wraper {
     width: 50px;
     height: 100%;
-    background-color: $accent-color;
+    background-image: radial-gradient(circle at 0% 100%, $dark-sky, $light-sky);
     display: flex;
     justify-content: center;
     align-items: center;
     .def-site-title {
       text-transform: uppercase;
       color: $background-color;
+      text-shadow: 0 0 20px black;
     }
   }
   .def-site-nav {
@@ -69,7 +70,7 @@ $default-card: 25%;
     .bottom-home-wrapper {
       height: 100%;
       width: 56px;
-      background-color: #D8303D;
+      background-image: radial-gradient(circle at 0% 100%, $dark-sky, $light-sky);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,6 +80,7 @@ $default-card: 25%;
         font-weight: 600;
         color: white;
         font-size: 22px;
+        text-shadow: 0 0 20px black;
       }
     }
     .bottom-page-link {
