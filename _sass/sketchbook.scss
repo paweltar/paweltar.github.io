@@ -20,6 +20,7 @@
     }
     @include media-query($on-palm) {
       width: 100%;
+      padding: 0 3px 20px;
     };
   }
 }
