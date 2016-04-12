@@ -10,4 +10,4 @@ From the same passion arises a satisfaction from creating modern websites. Since
 
 For this purpose the art of typography and printing was perfected through centuries, but nowadays the possibility of reaching other people have been elevated to a whole new level, impossible to achieve before. Using the Internet, we can not only stay in touch with millions of people around the world but also a range of tools that we can use, is now incredibly rich. We have not only static text, but also subtle animations and transitions that can make reception of content more pleasant experience, regardless of the device that we are using.
 
-I believe that web development is a kind of contemporary craft in the best sense of the word. This is an area that combines past achievements and creates something completely new, and the future can only be more interesting :)
+I believe that web development is a kind of contemporary craft in the best sense of the word. This is an area that combines past achievements and creates something completely new, and the future can only be more interesting!

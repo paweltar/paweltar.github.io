@@ -245,6 +245,9 @@ $text-color: darken(white, 35%);
                                           darken(red, 20%) 11%,
                                           white 11%
       );
+      @include media-query($on-palm) {
+        display: none;
+      }
     }
   }
 
