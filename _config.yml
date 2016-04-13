@@ -11,7 +11,7 @@ title: portfolio
 email: paweltar@gmail.com
 description: > # hi, this is my personal website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://paweltar.github.io" # the base hostname & protocol for your site
 github_username:  paweltar
 
 # Build settings
