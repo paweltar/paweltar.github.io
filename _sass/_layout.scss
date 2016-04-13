@@ -1,6 +1,10 @@
 /**
  * Site header
  */
+@keyframes pulse-opacity {
+  50% { color: rgba(white, 1) }
+}
+
 .Site {
   display: flex;
   min-height: 100vh;
@@ -56,6 +60,9 @@
     align-content: flex-end;
     text-align: left;
   }
+}
+#sketchbook {
+  animation: pulse-opacity 3s infinite ease-in-out;
 }
 #title-section {
   margin: 5%;
