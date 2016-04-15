@@ -2,7 +2,7 @@ $default-card: 25%;
 
 .def-site-header {
   height: 50px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid $grey-color-light;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

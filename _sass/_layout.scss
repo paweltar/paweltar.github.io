@@ -15,7 +15,6 @@
   border: 30px solid $background-color;
   min-height: 56px;
   height: 100vh;
-  // background-image: radial-gradient(circle at 0% 0%, $light-sky, $blue-sky, $dark-sky);
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/assets/bw-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   padding: 20px;
@@ -94,14 +93,12 @@
     padding: 5px 0;
     line-height: $base-line-height;
     font-weight: 600;
-    border-bottom: 2px dashed transparent;
     transition: 0.3s ease-in-out;
     &:not(:last-child) {
       margin-right: 20px;
     }
     &:hover {
       color: white;
-      border-bottom: 2px dashed $accent-color;
     }
   }
   @include media-query($on-palm) {
