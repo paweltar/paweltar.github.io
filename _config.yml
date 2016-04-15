@@ -13,6 +13,8 @@ description: > # hi, this is my personal website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://paweltar.github.io" # the base hostname & protocol for your site
 github_username:  paweltar
+codepen_username: paweltar
+pinterest_username: paweltar
 
 # Build settings
 markdown: kramdown

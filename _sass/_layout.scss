@@ -136,6 +136,12 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  border-left: 1px solid grayscale($typography-accent);
+  padding-left: 10px;
+  i {
+    margin-right: 5px;
+    color: grayscale($accent-color);
+  }
 }
 .footer-col-wrapper {
   font-size: 15px;
@@ -149,8 +155,7 @@
   padding-left: $spacing-unit / 2;
 }
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width: calc(35% - (#{$spacing-unit} / 2));
+  width: 50%;
 }
 .footer-col-2 {
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
