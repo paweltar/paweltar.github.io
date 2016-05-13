@@ -4,10 +4,50 @@ title: O mnie
 permalink: /about/
 ---
 
-Hi, my name is Paul Targoński, I'm interested in a lot of things, that have the one common denominator, which is creating. Among them - just to mention digital painting, carpentry and taking care of a small vineyard from which I hope to get the first few bottles of wine this year :)
+Hej,
+mam na imię Paweł Targoński. Z przyjemnością koncentruję się na części ‘frontowej’ stron internetowych, i chociaż nieraz korzystam z Ruby on Rails i sam język Ruby nie jest mi obcy, to największą frajdę sprawia mi zgłębianie potencjału CSS (pod postacią SCSS), który pomimo swojej prostoty, daje obecnie tak wiele możliwości – od wprowadzenia ułatwiającej pracę koncepcji flexboxa, poprzez subtelne animacje i przejścia aż po możliwość umieszczania elementów strony w przestrzeni trójwymiarowej.
 
-From the same passion arises a satisfaction from creating modern websites. Since the earliest times, people used the announcements, that were put up on the market, newspaper advertisements, flyers, posters, and a lot of other ways, just to reach the widest possible audience of potential customers, to share their ideas, to announce information or to increase sales.
+To wszystko razem tworzy wszechstronne narzędzie, z pomocą którego można przelać swój albo czyjś pomysł do okna przeglądarki, tak jak malarz przelewa swoją wizję na płótno – i ja też tak właśnie staram się patrzeć na CSS i JavaScript – jak na medium artystyczne; a na tworzenie stron jak na współczesne rzemiosło, czasem nawet jak na sztukę :)
 
-For this purpose the art of typography and printing was perfected through centuries, but nowadays the possibility of reaching other people have been elevated to a whole new level, impossible to achieve before. Using the Internet, we can not only stay in touch with millions of people around the world but also a range of tools that we can use, is now incredibly rich. We have not only static text, but also subtle animations and transitions that can make reception of content more pleasant experience, regardless of the device that we are using.
+Uwielbiam przejrzyste, łatwe w poruszaniu się interfejsy, które dobrze spełniają swoje zadanie, dopracowaną typografię, pasujące do kontekstu, nieprzypadkowe palety kolorów.
 
-I believe that web development is a kind of contemporary craft in the best sense of the word. This is an area that combines past achievements and creates something completely new, and the future can only be more interesting!
+---
+
+## Dlaczego powstała ta strona?
+
+Chciałem mieć całkowicie swoje miejsce w internecie, z którego mógłbym korzystać jak z ‘cyfrowego szkicownika’ - tzn. miejsce, w którym miałbym pod ręką swoje próby i eksperymenty z CSS’em i nie tylko, do którego mógłbym wrzucać swoje przemyślenia ale też mam nadzieję, że z czasem coraz więcej przydatnych dla innych, praktycznych wpisów.
+
+---
+
+Jako, że jest to strona ‘o mnie’ i nie powinienem się tu rozpisywać na poboczne tematy, to wspomnę tylko, że aktualnie korzystam z takich narzędzi jak:
+
+
+* oczywiście CSS :) (pod postacią Sass/SCSS),
+* JavaScript, jQuery (również pod postacią CoffeeScript),
+* Ruby (testowane z pomocą Rspec),
+* Ruby on Rails,
+* Git,
+* Gulp
+* Bower
+
+Nie są mi obce takie kwestie jak:
+
+
+* frameworki CSS (Foundation, Bootstrap),
+* Responsive Web Design
+* TDD
+
+Jeśli chodzi o moje plany na najbliższą przyszłość, to chcę pogłębić swoje umiejętności dotyczące:
+
+
+* Angular.js
+* React
+* Node.js
+* Designu
+* Malarstwa cyfrowego i tradycyjnego
+* Typografii
+* Wyrobu wina z winogron zebranych w mojej skromnej jak na razie winnicy, z której spodziewam się w tym roku, po długim oczekiwaniu, pierwszych większych zbiorów :)
+
+Takie są moje cele, które tutaj sam dla siebie uroczyście zapisuję :))
+
+Mam nadzieję, że ta strona będzie dobrze służyła do udokumentowania procesu nauki i z czasem wypełni się zawartością, do której będę mógł wracać, a która być może okaże się przydatna też dla innych :)
