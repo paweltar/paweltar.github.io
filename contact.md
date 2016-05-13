@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Kontakt
 permalink: /contact/
 ---
-You can contact me at my email adress, paweltar@gmail.com.
+Możesz się ze mną skontaktować pod adresem mailowym paweltar@gmail.com.

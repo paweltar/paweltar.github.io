@@ -7,10 +7,13 @@
 
   <nav class="def-site-nav">
     <div class="def-nav-links">
-      {% for my_page in site.pages %} {% if my_page.title %}
-      <a class="def-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> {% endif %} {% endfor %}
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <a class="def-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+      {% endfor %}
       <a href="/blog.html" class="page-link"><span>Blog</span></a>
-      <a class="def-page-link" href="/sketchbook.html">Sketchbook</a>
+      <a class="def-page-link" href="/sketchbook.html">Szkicownik</a>
       <a class="def-page-link" href="https://github.com/paweltar" target="_blank">Github</a>
     </div>
   </nav>
