@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No hej!"
-date:   2016-05-13 19:29:00 +0100
+date:   2016-05-13 15:29:00 +0100
 categories: css powitanie
 excerpt: "Pierwszy post, czyli czemu służy ta strona."
 ---
@@ -14,7 +14,7 @@ A na koniec – w kwestii ‘szkicownika’, do którego link widać w menu – 
 
 Dla mnie osobiście taki sposób ‘nabijania punktów doświadczenia’ na polu CSS okazał się bardzo skuteczny i nie do przecenienia. Właśnie takie wyjęte z kontekstu, niebędące częścią większego projektu prace pozwalają szybko przyswoić dany wycinek wiedzy, jak na przykład tworzenie różnych dziwnych kształtów za pomocą CSS, animacje, gradienty, rożne rodzaje przejść, wykorzystywanie właściwości box-shadow do tworzenia wielokrotności danego kształtu, oswojenie się z niesamowicie przydatnymi możliwościami dostarczanymi przez Sass i wiele, wiele innych skrawków wiedzy, które można wykorzystać później przy tworzeniu stron.
 
-Dobre ćwiczenie, rozwijające kreatywność pod tym względem (kiedy umiemy już tworzyć podstawowe kształty: koła, elipsy, trójkąty itp.) to tworzenie obrazków za pomocą jednego elementu – na przykład – postanawiasz narysować za pomocą CSS’a książkę, monitor komputera albo pizzę, butelkę, telewizor, liść, żarówkę, cokolwiek co wydaje się być możliwe do takiego uproszczenia :)) a kiedy już się zdecydujesz, że dajmy na to, będziesz rysować butelkę, żeby poćwiczyć gradienty i cienie, stwórz w pliku HTML jeden element „.bottle” i wyciśnij ze swoich umiejętności ile tylko dasz radę, żeby osiągnąć efekt, który będzie można bezspornie nazwać butelką :)
+Dobre ćwiczenie, rozwijające kreatywność pod tym względem (kiedy umiemy już tworzyć podstawowe kształty: koła, elipsy, trójkąty itp.) to tworzenie obrazków za pomocą jednego elementu – na przykład – postanawiasz narysować za pomocą CSS’a książkę, monitor komputera albo pizzę, butelkę, telewizor, liść, żarówkę, cokolwiek co wydaje się być możliwe do takiego uproszczenia :)) a kiedy już się zdecydujesz, że dajmy na to, będziesz rysować butelkę, żeby poćwiczyć gradienty i cienie, stwórz w pliku HTML jeden element `.bottle` i wyciśnij ze swoich umiejętności ile tylko dasz radę, żeby osiągnąć efekt, który będzie można bezspornie nazwać butelką :)
 
 Wykorzystuj właściwości `:before` i `:after`, żeby uzyskać dodatkowe kształty, baw się nachodzącymi na siebie gradientami i cieniami i zwróć uwagę na to, że efekty mogą się od siebie różnić w zależności od tego w jakiej przeglądarce będą wyświetlane.
 
@@ -23,4 +23,4 @@ Nie będę się teraz wdawał w szczegóły, w które z chęcią wgryzę się w
 Nie wiem - ale się domyślam - że temat na następny post to SVG. Albo coś zupełnie innego  :)
 
 
-#### *Blog może też zawierać śladowe ilości wpisów o stolarstwie, uprawie winorośli, sztuce, historii i innych totalnie losowych tematach.
+#### *Blog może zawierać śladowe ilości wpisów o stolarstwie, uprawie winorośli, sztuce, historii i innych totalnie losowych tematach.
