@@ -9,11 +9,11 @@ published: true
 
 Pierwszy post. Tak jak w wielkim skrócie napisałem na stronie ‘[o mnie](http://paweltar.github.io/about/)’ - to miejsce ma być dla mnie takim cyfrowym notatnikiem/szkicownikiem, który z czasem wypełni się różnymi moimi przemyśleniami na wszelakie tematy, być może jakimiś krótkimi tutorialami i opisami przydatnych technik. Sam jestem początkujący i cały czas się uczę (jako samouk), ale nawet osoba początkująca może podzielić się wiedzą, którą już posiada albo swoimi doświadczeniami. Oprócz tego, zbierając i uporządkowując materiały potrzebne do napisania wpisu na blogu sam zbieram i porządkuję swoją wiedzę.
 
-Mój zamiar jest taki, żeby wpisy dotyczyły głównie* tematyki programowania, ale nie wykluczam, a nawet jest to dość prawdopodobne, że będę czasem poruszał też inne ciekawe kwestie, jak na przykład sposoby organizowania sobie nauki na własną rękę, skutecznego przyswajania wiedzy, tego jak ważna jest powtarzalność, wytrwałość, tworzenie dobrych nawyków, żeby osiągać większe cele.
+Mój zamiar jest taki, żeby wpisy dotyczyły _głównie*_ tematyki programowania, ale nie wykluczam, a nawet jest to dość prawdopodobne, że będę czasem poruszał też inne ciekawe kwestie, jak na przykład sposoby organizowania sobie nauki na własną rękę, skutecznego przyswajania wiedzy, tego jak ważna jest powtarzalność, wytrwałość, tworzenie dobrych nawyków, żeby osiągać większe cele.
 
-A na koniec – w kwestii ‘szkicownika’, do którego link widać w menu – tutaj zbieram prace zrobione w celach treningowych za pomocą kodu i nie tylko.
+A na koniec – w kwestii ‘[szkicownika](http://paweltar.github.io/sketchbook.html)’, do którego link widać w menu – tutaj zbieram prace zrobione w celach treningowych za pomocą kodu i nie tylko.
 
-Dla mnie osobiście taki sposób ‘nabijania punktów doświadczenia’ na polu CSS okazał się bardzo skuteczny i nie do przecenienia. Właśnie takie wyjęte z kontekstu, niebędące częścią większego projektu prace pozwalają szybko przyswoić dany wycinek wiedzy, jak na przykład tworzenie różnych dziwnych kształtów za pomocą CSS, animacje, gradienty, rożne rodzaje przejść, wykorzystywanie właściwości box-shadow do tworzenia wielokrotności danego kształtu, oswojenie się z niesamowicie przydatnymi możliwościami dostarczanymi przez Sass i wiele, wiele innych skrawków wiedzy, które można wykorzystać później przy tworzeniu stron.
+Dla mnie osobiście taki sposób ‘nabijania punktów doświadczenia’ na polu CSS okazał się bardzo skuteczny i nie do przecenienia. Właśnie takie wyjęte z kontekstu, niebędące częścią większego projektu prace pozwalają szybko przyswoić dany wycinek wiedzy, jak na przykład tworzenie różnych dziwnych kształtów za pomocą CSS, animacje, gradienty, rożne rodzaje przejść, wykorzystywanie właściwości `box-shadow` do tworzenia wielokrotności danego kształtu, oswojenie się z niesamowicie przydatnymi możliwościami dostarczanymi przez Sass i wiele, wiele innych skrawków wiedzy, które można wykorzystać później przy tworzeniu stron.
 
 Dobre ćwiczenie, rozwijające kreatywność pod tym względem (kiedy umiemy już tworzyć podstawowe kształty: koła, elipsy, trójkąty itp.) to tworzenie obrazków za pomocą jednego elementu – na przykład – postanawiasz narysować za pomocą CSS’a książkę, monitor komputera albo pizzę, butelkę, telewizor, liść, żarówkę, cokolwiek co wydaje się być możliwe do takiego uproszczenia :)) a kiedy już się zdecydujesz, że dajmy na to, będziesz rysować butelkę, żeby poćwiczyć gradienty i cienie, stwórz w pliku HTML jeden element `.bottle` i wyciśnij ze swoich umiejętności ile tylko dasz radę, żeby osiągnąć efekt, który będzie można bezspornie nazwać butelką :)
 
@@ -24,4 +24,4 @@ Nie będę się teraz wdawał w szczegóły, w które z chęcią wgryzę się w
 Nie wiem - ale się domyślam - że temat na następny post to SVG. Albo coś zupełnie innego  :)
 
 
-#### *Blog może zawierać śladowe ilości wpisów o stolarstwie, uprawie winorośli, sztuce, historii i innych totalnie losowych tematach.
+#### * Blog może zawierać śladowe ilości wpisów o stolarstwie, uprawie winorośli, sztuce, historii i innych totalnie losowych tematach.
