@@ -254,6 +254,7 @@ hr {
 }
 .post-content {
   margin-bottom: $spacing-unit;
+  text-align: justify;
   p {
     font-size: $post-content-size;
     @include media-query($on-laptop) {
