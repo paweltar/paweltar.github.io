@@ -16,6 +16,7 @@ $light-primary-color: lighten(#CDDC39, 20%);
 		margin: 50px auto;
 		border: 20px solid $light-primary-color;
 		width: 715px;
+    min-width: 330px;
 		background-color: white;
 		display: flex;
 		flex-direction: column;
@@ -58,6 +59,7 @@ $light-primary-color: lighten(#CDDC39, 20%);
 						letter-spacing: 2px;
 						margin: 0;
             font-weight: 600;
+            white-space: nowrap;
 					}
 					.content-box {
 						margin: 5px 0;
@@ -124,7 +126,6 @@ $light-primary-color: lighten(#CDDC39, 20%);
 						}
 					}
 				}
-
 			}
 		}
 		.contact {
@@ -177,7 +178,7 @@ $light-primary-color: lighten(#CDDC39, 20%);
 	.link {
 		transition: color .2s ease-in-out;
 		&:hover {
-							color: $res-accent-color;
+			color: $res-accent-color;
 		}
 	}
 }
